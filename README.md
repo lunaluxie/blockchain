@@ -2,7 +2,7 @@
 
 > A simple blockchain made in python.
 
-This repository is a barebones implementation of a blockchain. It uses the proof of work protocol (sha256 with 4 leading zeros by default), and uses the 'longest is autorative' consensus algorithm.
+This repository is a barebones implementation of a blockchain. It uses the proof of work protocol (sha256 with 4 leading zeros by default), and uses the 'longest is authoritative' consensus algorithm.
 
 ## Installation
 ```
@@ -41,7 +41,7 @@ BODY (JSON): {"nodes":["192.168.1.124:5000", "192.168.1.125:5000"]}
 The body should be a JSON object with a `nodes` key containing a list of reachable addresses belonging to other nodes on the network.
 
 ### Resolve Conflicts
-Runs consensus algorithm (longest chain is autorative)
+Runs consensus algorithm (longest chain is authoritative)
 
 ```
 GET: http://0.0.0.0:5000/nodes/resolve
